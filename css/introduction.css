@@ -1,8 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    padding: 100px;
+    background: whitesmoke;
+    display: table-cell;
+}
+
+button {
+    margin: 20px;
+}
+
 header {
     height: 55px;
     padding: 1rem;
     color: white;
-    background-color: rgb(244, 248, 245);
+    background-color: rgb(207, 237, 199);
     font-weight: bold;
     display: flex;
     justify-content: space-between; 
@@ -11,7 +28,7 @@ header {
 }
 
 .logo {
-    color: rgb(11, 11, 11);
+    display: inline-block;
     
 }
 
@@ -31,7 +48,7 @@ header {
 
 .main_image_text {
     position: absolute;
-    top: 45%;
+    top: 53%;
     left: 50%;
     transform: translate( -50%, -50% );
     color: white;
@@ -39,4 +56,30 @@ header {
 
 .main_image_text  {
     color: aliceblue;
+}
+
+#catchprize {
+    color: rgb(0, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+    
+   
+}
+
+.w-btn {
+    position: relative;
+    border: none;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-family: "paybooc-Light", sans-serif;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.w-btn-indigo {
+    background-color: aliceblue;
+    color: #1e6b7b;
 }
