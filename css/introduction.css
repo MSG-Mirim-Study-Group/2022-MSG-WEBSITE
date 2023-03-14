@@ -1,7 +1,7 @@
 * {
-    margin: 10;
-    padding: 10;
-    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    
 }
 
 h1 {
@@ -22,88 +22,168 @@ ul {
 }
 
 
-
 header {
+    z-index: 1;
+    
     height: 55px;
     padding: 5px;
     color: white;
-    background-color: rgb(207, 237, 199);
+    background-color: white;
     font-weight: bold;
     display: flex;
     justify-content: space-around; 
     align-items: flex-end;
     box-shadow: 0 10px 10px -10px black;
-
+    
     position: fixed;
     top: 0;
-    
     left: 0;
     right: 0;
-  
-    /* 생략 */
 }
 
-body {
-    text-align: center;
-    padding: 100px;
-    background: whitesmoke;
+main {
+    text-align: left;
+    padding: 0px;
+    /* background: rgb(144, 211, 135); */
+    background-color: white;
+    color: rgb(36, 120, 24);
 }
 
 button {
     margin: 20px;
+    
+    position: relative;
+    left: 600px;
+    bottom: 50px;
+
+    border: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: "paybooc-Light", sans-serif;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s;  
+    
+    background-color: rgb(36, 120, 24);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
 }
 
+.box {
+    position: relative;                                                              
+    height: 100vh;
+    background-size: cover;
+}
+
+.box-cover{
+    position: relative;
+    left: 190px;
+    
+    
+    height: 100%;
+    width: 700px;
+    background-color: rgba(119, 210, 145, 0.4);                                                                 
+
+    
+ }
+
+ .box .content{
+    position: relative;
+    top:10px;
+    left:10px;
+    transform: translate(-00px, -50px);                                                                   
+    font-size:5rem;
+    color: white;
+    
+    text-align: center;
+}
+
+.main_about {
+    position: relative;
+    padding-top: 200px;
+    padding-left: 50px;
+}
+
+.QNA {
+    margin: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: rgb(36, 120, 24);
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
 
 .logo {
     image-rendering: auto;
     object-fit:cover;
 }
 
+.menubar {
+    text-decoration-line: none;
+    color: rgb(194, 243, 180);
+    position: relative;
+    top: -18px;
+
+    padding: 10px;
+}
+
+.menubar#MSG {
+    color: rgb(36, 120, 24);
+    position: fixed;
+    left: 100px;
+    top: -23px;
+}
+
+.menubar#this_frame {
+    color: rgb(36, 120, 24);
+}
+
 .main_image {
     background-image: url("img/msg member.png");
     filter: brightness(50%);
-    margin-top: 1%;
+    margin-top: -80px;
     
 }
 
-.main_image_text {
-    position: absolute;
-    top: 53%;
-    left: 50%;
-    transform: translate( -50%, -50% );
-    color: white;
+.main_text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+}
+
+.text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.main_underline::after {
+    content: "";
+    display: block;
+    width: 200px;
+    border-bottom: 10px solid white;
+    margin: 20px;
+    padding: 20px;
 }
 
 .underline::after {
     content: "";
     display: block;
     width: 200px;
-    border-bottom: 3px solid rgb(120, 238, 87);
-    margin: 20px auto;
+    border-bottom: 10px solid white;
+    margin: 30px auto;
 }
 
-.w-btn {
-    position: relative;
-    border: none;
-    display: inline-block;
-    padding: 15px 30px;
-    border-radius: 15px;
-    font-family: "paybooc-Light", sans-serif;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.25s;
-}
-
-.w-btn-indigo {
-    background-color: aliceblue;
-    color: #1e6b7b;
-}
 
 #catchprize {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: xx-large;
-    
-   
+}
+
+.menubar#MSG {
+    position: fixed;
+    bottom: 100px;
 }
