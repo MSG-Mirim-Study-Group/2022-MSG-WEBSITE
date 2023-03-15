@@ -1,0 +1,178 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+h1 {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+nav {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+header {
+    z-index: 1;
+    
+    height: 55px;
+    padding: 5px;
+    color: white;
+    background-color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around; 
+    align-items: flex-end;
+    box-shadow: 0 10px 10px -10px black;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+main {
+    text-align: left;
+    padding: 0px;
+    /* background: rgb(144, 211, 135); */
+    background-color: rgb(194, 243, 180);
+    color: rgb(36, 120, 24);
+}
+
+button {
+    margin-bottom: 20px;
+
+    border: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: "paybooc-Light", sans-serif;
+    
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s;  
+    
+    background-color: rgb(36, 120, 24);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+button#join {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    padding: 20px 150px;
+    position: relative;
+    left: 450px;
+    margin: 50px;
+    margin-bottom: 200px;
+}
+
+.box {
+    position: relative;                                                              
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-color: white;
+    padding: 40px;
+    padding-right: 50%;
+    border-radius: 30px;
+
+    font-size: 17px;
+    font-weight: bold;
+    
+}
+
+/* 하얀색 박스 왼쪽 오른쪽 크기 조절 */
+.box-cover{
+    position: relative;
+    left: 190px;
+    
+    height: 100%;
+    width: 700px;                                                            
+    
+ }
+
+.main_about {
+    position: relative;
+    padding-top: 200px;
+    padding-left: 50px;
+}
+
+.logo {
+    image-rendering: auto;
+    object-fit:cover;
+}
+
+.menubar {
+    text-decoration-line: none;
+    color: rgb(194, 243, 180);
+    position: relative;
+    top: -18px;
+
+    padding: 10px;
+}
+
+.menubar#MSG {
+    color: rgb(36, 120, 24);
+    position: fixed;
+    left: 100px;
+    top: -23px;
+}
+
+.menubar#this_frame {
+    color: rgb(36, 120, 24);
+}
+
+.main_image {
+    background-image: url("img/msg member.png");
+    filter: brightness(50%);
+    margin-top: -80px;
+    
+}
+
+.main_text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    margin-top: 0px;
+}
+
+.text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.main_underline::after {
+    content: "";
+    display: block;
+    width: 200px;
+    border-bottom: 10px solid white;
+    margin: 20px;
+    padding: 20px;
+}
+
+.underline::after {
+    content: "";
+    display: block;
+    width: 200px;
+    border-bottom: 10px solid white;
+    margin: 30px auto;
+}
+
+
+#catchprize {
+    color: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+}
+
+.menubar#MSG {
+    position: fixed;
+    bottom: 100px;
+}
