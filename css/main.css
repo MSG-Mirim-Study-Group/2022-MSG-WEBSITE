@@ -44,7 +44,7 @@ main {
     text-align: left;
     padding: 0px;
     /* background: rgb(144, 211, 135); */
-    background-color: white;
+    background-color: rgb(194, 243, 180);
     color: rgb(36, 120, 24);
 }
 
@@ -72,8 +72,11 @@ button {
 
 .box {
     position: relative;                                                              
-    height: 100vh;
-    background-size: cover;
+    width: 100%;
+    height: 100%;
+    
+    font-size: 17px;
+    font-weight: bold;
 }
 
 .box-cover{
@@ -83,21 +86,12 @@ button {
     
     height: 100%;
     width: 700px;
-    background-color: rgba(119, 210, 145, 0.4);                                                                 
+    background-color: white;                                                                 
 
     
  }
 
- .box .content{
-    position: relative;
-    top:10px;
-    left:10px;
-    transform: translate(-00px, -50px);                                                                   
-    font-size:5rem;
-    color: white;
-    
-    text-align: center;
-}
+
 
 .main_about {
     position: relative;
@@ -152,6 +146,7 @@ button {
 .main_text {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 50px;
+    margin-top: 0px;
 }
 
 .text {
